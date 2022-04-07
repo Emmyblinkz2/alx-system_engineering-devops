@@ -1,3 +1,2 @@
 #!/bin/bash
-find . -type d -not -name . | wc -l
-ls -tl | head -n 10
+find . -type d ! -path . -print | wc -l
